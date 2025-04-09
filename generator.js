@@ -1,3 +1,5 @@
+console.log("ran");
+
 document.addEventListener("DOMContentLoaded", function () {
     // Check if tech-content exists and has flag to run
     const techContentElement = document.getElementById("tech-content");
