@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let techFigure = "";
     if (techData["image-url"] !== "") {
-        techFigure = `<figure class="technology-image"><img src="${techData["image-url"]}" alt="${techData["alt-text"]}" loading="lazy"><figcaption class="technology-image-caption">${techData["image-caption"]}</figcaption></figure>`;
+        techFigure = `<figure><img class="technology-image" src="${techData["image-url"]}" alt="${techData["alt-text"]}" loading="lazy"><figcaption class="technology-image-caption">${techData["image-caption"]}</figcaption></figure>`;
     }
 
     let techId = techData["tech-id"] !== "" ? techData["tech-id"] : "N/A";
