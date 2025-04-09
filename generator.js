@@ -1,5 +1,3 @@
-console.log("ran");
-
 document.addEventListener("DOMContentLoaded", function () {
     // Check if tech-content exists and has flag to run
     const techContentElement = document.getElementById("tech-content");
@@ -39,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let techFigure = "";
     if (techData["image-url"] !== "") {
-        techFigure = `<figure class="tech-image"><img src="${techData["image-url"]}" alt="${techData["alt-text"]}" loading="lazy"><figcaption>${techData["image-caption"]}</figcaption></figure>`;
+        techFigure = `<figure class="technology-image"><img src="${techData["image-url"]}" alt="${techData["alt-text"]}" loading="lazy"><figcaption class="technology-image-caption">${techData["image-caption"]}</figcaption></figure>`;
     }
 
     let techId = techData["tech-id"] !== "" ? techData["tech-id"] : "N/A";
