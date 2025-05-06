@@ -75,12 +75,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let techContactEmail = "";
-    if (techData["contact-email"] !== "") {
+    let emailContent = `mailto:${techData["contact-email"]}?subject=Inquiry%20about%20${techData["title"]}&body=Hello%20${techData["contact-name"]},%0D%0A%0D%0AI%20am%20interested%20in%20your%20technology%20"${techData["title"]}".%0D%0A%0D%0A${techData["contact-email"]}%0D%0A`;
+    if (techData["contact-email"] !== "" && techData["contact-name"] !== "") {
         techContactEmail = `<a id="contact-email-btn" class="btn btn-primary btn-block btn-arrow mt-2" target="_blank" href="mailto:${techData["contact-email"]}" role="button">Email ${techData["contact-name"]}</a>`;
     }
 
     let techAlternativeContact = "";
-    if (techData["alternative-contact"] !== "") {
+    if (
+        techData["alternative-contact"] !== "" &&
+        techData["contact-name"] !== ""
+    ) {
         techAlternativeContact = `<a id="alternative-contact-btn" class="btn btn-primary btn-block btn-arrow mt-2" target="_blank" href="${techData["alternative-contact"]}" role="button">Contact ${techData["contact-name"]}</a>`;
     }
 
