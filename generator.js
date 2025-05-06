@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let techFigure = "";
     if (techData["image-url"] !== "") {
         techFigure = `
-        <figure>
+        <figure style="margin-left: -15px;margin-right: -15px;width: calc(100% + 30px) !important;max-width: calc(100% + 30px) !important;">
             <a href="${techData["image-url"]}" data-lightbox="tech-image" data-title="${techData["image-caption"]}">
                 <img class="technology-image" src="${techData["image-url"]}" alt="${techData["alt-text"]}" loading="lazy" style="cursor: zoom-in;">
             </a>

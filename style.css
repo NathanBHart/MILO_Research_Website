@@ -10,7 +10,14 @@
     border-radius: 5px;
     margin-bottom: 1rem;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
+
+.technology-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #0000004d;
+}
+
 .technology-title {
 }
 .technology-body {
